@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Clase 04: Funciones</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
+		<link rel="shortcut icon" href="res/favicon.ico" />
+		<link rel="stylesheet" href="res/css/styles.css" />
+		<script src="clases/clase-04/ejemplo-3-1.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1>Clase 04: Funciones - Ejemplo 3</h1>
+		</header>
+		<main>
+			<h2>Interacción mediante eventos</h2>
+			<ul>
+				<li>Creamos un botón con el valor "Interactuemos".</li>
+				<li>Le asignamos el atributo onclick, cuyo contenido es pedir por prompt() un <em>nombre</em> y luego mostrarlo mediante un console.info().</li>
+				<li>Hacer click en el botón "Interactuemos".</li>
+				<li>Creamos un botón con el valor "Interactuemos de otra forma".</li>
+				<li>Le asignamos el atributo onclick, cuyo contenido es ejecutar la función PedirNombre, que pide por prompt() un <em>nombre</em> y luego lo muestr mediante un console.info().</li>
+				<li>Hacer click en el botón "Interactuemos de otra forma".</li>
+			</ul>
+			<button onclick="var nombre = prompt('Ingrese un nombre'); console.info('Valor ingresado: ' + nombre);">Interactuemos</button>
+			<button onclick="PedirNombre();">Interactuemos de otra forma</button>
+		</main>
+		<footer>
+			<ul>
+				<li>Gustavo Santucho</li>
+			
+				<li>Programación 1</li>
+			</ul>
+		</footer>
+	</body>
+</html>

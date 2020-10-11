@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Clase 21: CSS, localStorage, offsets, scroll, eventos, teclado - Ejemplo 2</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
+		<link rel="shortcut icon" href="res/favicon.ico" />
+		<link rel="stylesheet" href="res/css/styles.css" />
+		<style type="text/css">
+		.del { opacity: .5; }
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>Clase 21: CSS, localStorage, offsets, scroll, eventos, teclado - Ejemplo 2</h1>
+		</header>
+		<main>
+			<h2>localStorage</h2>
+			<p>Carrito</p>
+			<hr />
+			<div>
+				<p>Carrito - Detalles:</p>
+				<pre style="background: #000; font-size: 1em; color: #0F0;">-</pre>
+			</div>
+			<div id="productos">
+				<div>
+					<p><strong>Prod 1:</strong> <em>$100</em></p>
+					<button data-id="1" data-val="100" class="add">Agregar</button>
+					<button data-id="1" data-val="100" class="del">Quitar</button>
+				</div>
+				<div>
+					<p><strong>Prod 2:</strong> <em>$200</em></p>
+					<button data-id="2" data-val="200" class="add">Agregar</button>
+					<button data-id="2" data-val="200" class="del">Quitar</button>
+				</div>
+				<div>
+					<p><strong>Prod 3:</strong> <em>$300</em></p>
+					<button data-id="3" data-val="300" class="add">Agregar</button>
+					<button data-id="3" data-val="300" class="del">Quitar</button>
+				</div>
+				<div>
+					<p><strong>Prod 4:</strong> <em>$400</em></p>
+					<button data-id="4" data-val="400" class="add">Agregar</button>
+					<button data-id="4" data-val="400" class="del">Quitar</button>
+				</div>
+			</div>
+			<button id="reset">Vaciar carrito</button>
+		</main>
+		<footer>
+
+		</footer>
+		<script src="clases/clase-21/ejemplo-2-1.js"></script>
+	</body>
+</html>

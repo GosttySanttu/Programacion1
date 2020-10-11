@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Clase 17: DOM III - Ejercicio 2</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
+		<link rel="shortcut icon" href="res/favicon.ico" />
+		<link rel="stylesheet" href="res/css/styles.css" />
+		<style type="text/css">
+		#thumbs { display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%; }
+		#thumbs div { width: 19em; height: 3em; border-radius: 0 0 5px 5px; display: inline-block; overflow: hidden; cursor: pointer; transition: height 0.5s; padding-bottom: 1em; position: relative; margin-bottom: 1em; }
+		#thumbs h3 { position: absolute; width: 100%; padding: .3em 0; background: rgba(255,255,255,0.7); font-size: 1.9em; color: gray; text-align: center; border-radius: 0 0 5px 5px; }
+		@media screen and (min-width: 960px) { #thumbs { display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start; width: 100%; } }
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>Clase 17: DOM III - Ejercicio 2</h1>
+		</header>
+		<main>
+			<h2>Acordeones</h2>
+			<p>Todos los divs miden 190px por 30px. Al hacerle click a cada uno, se debe cambiar su alto a 265px, el texto del h3 tiene que pasar al color correspondiente (lo obtienen del alt de la img).
+			<p>Cuando se clickeaen el mismo divo en otro, se debe achicar el anterior (volver a 30px) y el h3 pasa "grey". Contemplar 3 estados del efecto:
+			<ul>
+				<li>Si no hay div seleccionado, se debe desplegar un nuevo div.</li>
+				<li>Si se hace clicken un divya desplegado, se debe replegar y ya no hay ningún div seleccionado.</li>
+				<li>Si se hace clicken un div distinto, se repliega el último seleccionado y se despliega un nuevo div.</li>
+			</ul>
+			<p>Utilizar una variable global que se encargue de guardar el divseleccionado.</p>
+			<hr />
+			<div id="thumbs">
+				<div>
+					<h3>Color 1</h3>
+					<img src="items/rojo.jpg" alt="red" />
+				</div>
+				<div>
+					<h3>Color 2</h3>
+					<img src="items/verde.jpg" alt="lightgreen" />
+				</div>
+				<div>
+					<h3>Color 3</h3>
+					<img src="items/azul.jpg" alt="blue" />
+				</div>
+				<div>
+					<h3>Color 4</h3>
+					<img src="items/amarillo.jpg" alt="yellow" />
+				</div>
+				<div>
+					<h3>Color 5</h3>
+					<img src="items/violeta.jpg" alt="magenta" />
+				</div>
+			</div>
+		</main>
+		<footer>
+
+		</footer>
+		<script src="clases/clase-17/ejercicio-2-1.js"></script>
+	</body>
+</html>

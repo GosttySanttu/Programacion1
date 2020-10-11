@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Clase 09: Arrays III - ECMA6 - Ejercicio 1</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
+		<link rel="shortcut icon" href="res/favicon.ico" />
+		<link rel="stylesheet" href="res/css/styles.css" />
+		<script src="clases/clase-09/ejercicio-1-0.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1>Clase 09: Arrays III - ECMA6 -Ejercicio 1</h1>
+		</header>
+		<main>
+			<h2>Recorriendo arrays</h2>
+			<p>Creemos un array de datos (países, bandas, frutas, etc).</p>
+			<p>Tenemos el botón "Mostrar datos", que al hacerle click debe ejecutar la función RecorrerArray que reciba como argumento el array que creamos.</p>
+			<p>Cada ítem del array debe irse mostrando en un li, que se guardará en un ul que se deberá ir agregando a la variable info.</p>
+			<p>Dicha variable debe ser pasada como argumento a la función "MostrarInfo" (una función ya creada que se encarga de mostrar el código generado … que por supuesto les voy a explicar para que entiendan que hace).</p>
+			<button onclick="RecorrerArray(aDatos);">Mostrar datos (v1)</button>
+			<hr />
+			<p>Tomando como base la función anterior, creamos la función RecorrerArray2.</p>
+			<p>Esta función, ahora, además debe recibir un segundo argumento, que será desde dónde comenzará a recorrer el array.</p>
+			<p>El ingreso de este segundo parámetro será mediante prompt(). Por defecto 0.</p>
+			<p>Validar y contemplar que pasa si:</p>
+			<ul>
+				<li>No es un número.</li>
+				<li>Si el número es menor a 0.</li>
+				<li>Si el número supera la longitud del array.</li>
+			</ul>
+			<button onclick="RecorrerArray2(aDatos, prompt('Indique el índice desde dónde comenzar'))">Mostrar datos (v2)</button>
+			<hr />
+			<p>Tomando como base la función anterior, creamos la función RecorrerArray3.</p>
+			<p>Esta función, ahora, además debe recibir un tercer argumento, que será hasta dónde recorrerá el array.</p>
+			<p>El ingreso de este segundo parámetro será mediante prompt(). Por defecto la longitud del array.</p>
+			<p>Validar y contemplar que pasa si:</p>
+			<ul>
+				<li>No es un número.</li>
+				<li>Si el número es menor a 0.</li>
+				<li>Si el número supera la longitud del array.</li>
+				<li>Si este valor es menor al inicial.</li>
+			</ul>
+			<button onclick="RecorrerArray3(aDatos, prompt('Indique el índice desde dónde comenzar'), prompt('Indique el índice hasta dónde recorrer'))">Mostrar datos (v3)</button>
+			<hr />
+			<div id="info"></div>
+			<script src="clases/clase-09/ejercicio-1-1.js"></script>
+			<script src="clases/clase-09/ejercicio-1-2.js"></script>
+			<script src="clases/clase-09/ejercicio-1-3.js"></script>
+		</main>
+		<footer>
+
+		</footer>
+	</body>
+</html>

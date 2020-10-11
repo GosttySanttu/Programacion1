@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Clase 21: CSS, localStorage, offsets, scroll, eventos, teclado - Ejercicio 1</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
+		<link rel="shortcut icon" href="res/favicon.ico" />
+		<link rel="stylesheet" href="res/css/styles.css" />
+	</head>
+	<body>
+		<header>
+			<h1>Clase 21: CSS, localStorage, offsets, scroll, eventos, teclado - Ejercicio 1</h1>
+		</header>
+		<main>
+			<h2>Jueguito</h2>
+			<ol>
+				<li>Crear cada 100ms un div de 50x50px, posición absoluta, top y left aleatorio dentro de los límites del navegador, color aleatorio de un array de 5 colores.</li>
+				<li>Que esto suceda durante 30 segundos, informar el tiempo restante en #timer.</li>
+				<li>Definir aleatoriamente el color "ganador" e informarlo en #color.</li>
+				<li>Cada vez que el usuario hace click en un div del color "ganador" suma 100 puntos, mostrar el puntaje en #puntos (empieza en 0).</li>
+				<li>Cada vez que el usuario hace click en un div que no es del color "ganador", resta 50 puntos.</li>
+			</ol>
+			<hr />
+			<button id="start">Empezar</button>
+			<div id="hud" style="background: rgba(0,0,0,.5); z-index: 1000; padding: 1em; border-radius: 1em;">
+				<p><strong>Tiempo restante:</strong> <span id="timer">0</span></p>
+				<p><strong>Color ganador:</strong> <span id="color">0</span></p>
+				<p><strong>Puntaje:</strong> <span id="puntos">0</span></p>
+			</div>
+		</main>
+		<footer>
+	
+		</footer>
+		<script src="soluciones/clase-21/ejercicio-1-1.js"></script>
+	</body>
+</html>

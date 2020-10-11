@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Clase 21: CSS, localStorage, offsets, scroll, eventos, teclado - Ejemplo 5</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
+		<link rel="shortcut icon" href="res/favicon.ico" />
+		<link rel="stylesheet" href="res/css/styles.css" />
+	</head>
+	<body>
+		<header>
+			<h1>Clase 21: CSS, localStorage, offsets, scroll, eventos, teclado - Ejemplo 5</h1>
+		</header>
+		<main>
+			<h2>Consigna</h2>
+			<ol>
+				<li>Hacer click en el button #btn1 y mostrar todos los valores en el p#info.</li>
+				<li>Agregar dos eventos del tipo click al button #btn2, el primero ejecutará la función F1, que mostrará el mensaje "Función 1"; el segundo ejecutará la función F2, que mostrará el mensaje "Función 2". Los mensajes se mostrar en p#info.</li>
+				<li>Con la estructura del div#prueba-2, probar la propagación de eventos.</li>
+			</ol>
+			<hr />
+			<div id="prueba-1">
+				<button id="btn1">Veamos mi información de evento</button>
+				<button id="btn2">Ejecutaré dos eventos</button>
+				<p id="info"></p>
+			</div>
+			<hr />
+			<div id="prueba-2">
+				<div id="d1">
+					<p id="p1">
+						<a id="a1" href="#">Hacé click en este link, voy a "burbujear".</a>
+					</p>
+				</div>
+				<div id="d2">
+					<p id="p2">
+						<a id="a2" href="#">Hacé click en este link, voy a "capturar".</a>
+					</p>
+				</div>
+			</div>
+		</main>
+		<footer>
+
+		</footer>
+		<script src="clases/clase-21/ejemplo-5-1.js"></script>
+	</body>
+</html>

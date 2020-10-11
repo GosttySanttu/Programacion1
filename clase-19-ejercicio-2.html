@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Clase 19: DOM V - Ejercicio 2</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
+		<link rel="shortcut icon" href="res/favicon.ico" />
+		<link rel="stylesheet" href="res/css/styles.css" />
+		<style type="text/css">
+		#frm { align-items: center; }
+		#frm > div { display: flex; flex-wrap: wrap; flex-direction: row; justify-content: space-between; align-items: flex-start; }
+		#frm > div > fieldset { margin-right: 4em; }
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>Clase 19: DOM V - Ejercicio 2</h1>
+		</header>
+		<main>
+			<h2>Formulario</h2>
+			<p>Tareas a realizar antes de enviar el formulario:</p>
+			<ul>
+				<li>Cargar las opciones dentro de los selects país / provincia (cuando cambia el pais, cambian las opciones de provincia).</li>
+				<li>Debe mostrar un mensaje de error personalizado para:</li>
+				<li style="list-style:none;">
+					<ul>
+						<li>el nombre, que debe tener un mínimo de 3 caracteres.</li>
+						<li>las claves, que al menos deben tener 4 caracteres y deben ser iguales.</li>
+					</ul>
+				</li>
+				<li>Debe seleccionar al menos un valor para el campo Género.</li>
+				<li>Debe elegir al menos 3 intereses para enviar el formulario.</li>
+				<li>Además, debe ir mostrando la cantidad de intereses en p#cantidad.</li>
+			</ul>
+			<hr />
+			<div>
+				<form id="frm">
+					<div>
+						<fieldset>
+							<legend>Usuario y clave </legend>
+							<input type="text" name="nombre" placeholder="Nombre" required value="Fede" />
+							<input type="email" name="email" placeholder="Email" required value="m@m" />
+							<input type="password" name="clave" placeholder="Clave" required value="1234" />
+							<input type="password" name="reclave" placeholder="Confirmar clave" required value="1234" />
+						</fieldset>
+						<fieldset>
+							<legend>Género </legend>
+							<label><input type="radio" name="genero" value="masculino" /> Masculino</label>
+							<label><input type="radio" name="genero" value="femenino" /> Femenino</label>
+							<label><input type="radio" name="genero" value="otro" /> Otro</label>
+						</fieldset>
+						<fieldset>
+							<legend>País / Provincia </legend>
+							<select name="pais"></select>
+							<select name="prov"></select>
+						</fieldset>
+						<fieldset>
+							<legend>Intereses </legend>
+							<label><input type="checkbox" name="programacion" value="programacion" /> Programación</label>
+							<label><input type="checkbox" name="diseno" value="diseno" /> Diseño</label>
+							<label><input type="checkbox" name="musica" value="musica" /> Música</label>
+							<label><input type="checkbox" name="literatura" value="literatura" /> Literatura</label>
+							<label><input type="checkbox" name="animacion" value="animacion" /> Animación</label>
+							<p id="cant"></p>
+						</fieldset>
+					</div>
+					<p id="mensaje"></p>
+					<input type="submit" value="Enviar datos" />
+				</form>
+			</div>
+		</main>
+		<footer>
+
+		</footer>
+		<script src="clases/clase-19/ejercicio-2-1.js"></script>
+	</body>
+</html>
